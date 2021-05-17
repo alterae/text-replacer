@@ -4,21 +4,10 @@ var fieldInput;
 var fieldOutput;
 var fieldSearch;
 var fieldReplace;
-/**
- * Replaces all instances of `search` in `input` with `replace`.
- * @param input The string to modify
- * @param replace The text to replace with
- * @param search The substring to find
- * @returns The modified string
- */
 function replaceText(input, search, replace) {
     var re = new RegExp(search, 'g');
     return input.replace(re, replace);
 }
-/**
- * Handles and `preventDefault()`s the `submit` event.
- * @param event The submit event
- */
 function handleSubmit(event) {
     event.preventDefault();
     var input = fieldInput.value;
