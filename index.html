@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Replacer</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="text-center">Find and Replace Text</h1>
+    </header>
+    <div id="main" class="container panel panel-default">
+      <form id="ui" class="panel-body">
+        <div class="form-group">
+          <label for="input-text">Text to operate on:</label>
+          <textarea
+            class="form-control"
+            name="input-text"
+            id="input-text"
+          ></textarea>
+        </div>
+        <div class="form-inline">
+          <label for="search-string">Replace</label>
+          <input
+            type="text"
+            class="form-control"
+            name="search-string"
+            id="search-string"
+          />
+          <label for="replace-string">with</label>
+          <input
+            type="text"
+            class="form-control"
+            name="replace-string"
+            id="replace-string"
+          />
+        </div>
+        <div class="form-group">
+          <label for="output-text">Result:</label>
+          <textarea
+            class="form-control"
+            name="output-text"
+            id="output-text"
+            readonly
+          >
+          </textarea>
+        </div>
+        <input
+          type="submit"
+          class="btn btn-primary"
+          id="submit-btn"
+          value="Replace"
+        />
+      </form>
+    </div>
+  </body>
+</html>
