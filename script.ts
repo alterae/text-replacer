@@ -42,5 +42,5 @@ document.addEventListener('DOMContentLoaded', (): void => {
     fieldOutput.value =
     fieldSearch.value =
     fieldReplace.value =
-      '';
+    '';
 });
