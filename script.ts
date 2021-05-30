@@ -12,7 +12,7 @@ let fieldReplace: HTMLInputElement;
  * @param search The substring to find
  * @returns The modified string
  */
-function replaceText(input: string, search: string, replace: string) {
+function replaceText(input: string, search: string, replace: string): string {
   const re = new RegExp(search, 'g');
   return input.replace(re, replace);
 }
@@ -21,7 +21,7 @@ function replaceText(input: string, search: string, replace: string) {
  * Handles and `preventDefault()`s the `submit` event.
  * @param event The submit event
  */
-function handleSubmit(event: { preventDefault: () => void }) {
+function handleSubmit(event: { preventDefault: () => void }): void {
   event.preventDefault();
 
   const input = fieldInput.value;
@@ -31,7 +31,7 @@ function handleSubmit(event: { preventDefault: () => void }) {
   fieldOutput.value = replaceText(input, search, replace);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (): void => {
   $('#ui')?.addEventListener('submit', handleSubmit);
   fieldInput = $('#input-text') as HTMLTextAreaElement;
   fieldOutput = $('#output-text') as HTMLTextAreaElement;
