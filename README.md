@@ -2,6 +2,8 @@
 
 A simple utility site for finding-and-replacing text. Made in an afternoon to learn Javascript/Typescript.
 
+> ℹ️ Currently pending a rewrite in Svelte.
+
 ## Usage
 
 Fill in the form with the text you want to alter, the text you want to search, and the text you want to replace it with.
